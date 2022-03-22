@@ -20,7 +20,7 @@ print(product_price)
 product = data.find(name="span", id="productTitle").getText().strip("\n")
 print(product)
 
-if price < BUY_PRICE:
+if product_price < BUY_PRICE:
      with smtplib.SMTP("smtp.gmail.com") as connection:
          connection.starttls()
          connection.login(user=MY_EMAIL, passwd= MY_PASS)
